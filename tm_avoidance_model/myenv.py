@@ -1,4 +1,5 @@
-import math, gym
+import math
+import gymnasium as gym
 import numpy as np
 from keras import models
 
@@ -25,7 +26,7 @@ s_std = np.array([2.764, 1.560, 0.4220, 35931., 58.47])
 a_mean = np.array([4072.8761393229165, 0.6, 0.41])
 a_std = np.array([3145.5935872395835, 0.31, 0.31])
 
-class Env(gym.GoalEnv):
+class Env(gym.Env):
     def __init__(self):
         super(Env, self).__init__()
         # Load data and models
