@@ -8,7 +8,7 @@ Forked from [TearingAvoidance](https://github.com/PlasmaControl/TearingAvoidance
   (2) Tearing mode avoidance model using deep reinforcement learning
 
 # Note
-- Some scripts need experimental data from DIII-D, which are not available from this repository.   To access DIII-D data, you should become a DIII-D user, per the instructions at https://d3dfusion.org/become-a-user/.
+- Some scripts need experimental data from DIII-D, which are not available from this repository. To access DIII-D data, you should become a DIII-D user, per the instructions at https://d3dfusion.org/become-a-user/.
 
 # Environment Setup
 First, clone the repository.
@@ -18,12 +18,12 @@ cd TearingAvoidance
 ```
 # Conda Environment
 
-Create the fusion_rl environment with Python 3.8
+Create the fusion_rl environment with Python 3.7.
 ```
-conda create -n fusion_rl python=3.8
+conda create -n fusion_rl python=3.7
 ```
 
-Activate the environment
+Activate the environment:
 ```
 conda activate fusion_rl
 ```
@@ -33,28 +33,31 @@ Install the required packages
 pip install -r requirements.txt
 ```
 
-## Install Torch
-
-Choose between cuda and cpu versions.
-
-### Option 1: CPU Only
-
-```
-pip install torch==2.2.1 torchvision==0.17.1 torchaudio==2.2.1 --index-url https://download.pytorch.org/whl/cpu
-```
-### Option 2: Cuda 12.1
-
-```
-pip install torch==2.2.1 torchvision==0.17.1 torchaudio==2.2.1 --index-url https://download.pytorch.org/whl/cu121
-```
 ## Install TensorFlow
 
+Unfortunately, keras-rl2 is no longer updated and requires an older version of tensorflow (version 2.1.0). 
+
+### Option 1: CPU Only
+
+```
+pip install tensorflow==2.1.0 keras==2.1.0 keras-rl2==1.0.5
+```
+
+
+## Install Torch 1.13.1
+
 Choose between cuda and cpu versions.
 
 ### Option 1: CPU Only
 
 ```
-pip install tensorflow==2.4.1 keras-rl2
+pip install torch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1
+```
+
+### Option 2: Cuda 11.7
+
+```
+pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
 ```
 
 # References

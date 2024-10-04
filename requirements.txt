@@ -1,5 +1,6 @@
+numpy==1.21.6
 matplotlib
-numpy
 tqdm
 gymnasium
 scikit-learn
+protobuf==3.20.1
