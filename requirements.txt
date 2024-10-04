@@ -3,10 +3,3 @@ numpy
 tqdm
 gymnasium
 scikit-learn
-# CPU ONLY INSTALLATIONS
-torch==2.2.1
-torchvision==0.17.1
-torchaudio==2.2.1
-tensorflow
-keras
-keras-rl2

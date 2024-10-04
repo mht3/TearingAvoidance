@@ -18,9 +18,9 @@ cd TearingAvoidance
 ```
 # Conda Environment
 
-Create the fusion_rl environment with Python 3.11
+Create the fusion_rl environment with Python 3.8
 ```
-conda create -n fusion_rl python=3.11
+conda create -n fusion_rl python=3.8
 ```
 
 Activate the environment
@@ -31,6 +31,30 @@ conda activate fusion_rl
 Install the required packages
 ```
 pip install -r requirements.txt
+```
+
+## Install Torch
+
+Choose between cuda and cpu versions.
+
+### Option 1: CPU Only
+
+```
+pip install torch==2.2.1 torchvision==0.17.1 torchaudio==2.2.1 --index-url https://download.pytorch.org/whl/cpu
+```
+### Option 2: Cuda 12.1
+
+```
+pip install torch==2.2.1 torchvision==0.17.1 torchaudio==2.2.1 --index-url https://download.pytorch.org/whl/cu121
+```
+## Install TensorFlow
+
+Choose between cuda and cpu versions.
+
+### Option 1: CPU Only
+
+```
+pip install tensorflow==2.4.1 keras-rl2
 ```
 
 # References
