@@ -1,6 +1,6 @@
-numpy==1.21.6
+numpy
 matplotlib
 tqdm
 gymnasium
 scikit-learn
-protobuf==3.20.1
+ipykernel

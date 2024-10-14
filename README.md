@@ -18,9 +18,9 @@ cd TearingAvoidance
 ```
 # Conda Environment
 
-Create the fusion_rl environment with Python 3.7.
+Create the fusion_rl environment with Python 3.8.
 ```
-conda create -n fusion_rl python=3.7
+conda create -n fusion_rl python=3.8
 ```
 
 Activate the environment:
@@ -40,7 +40,7 @@ Unfortunately, keras-rl2 is no longer updated and requires an older version of t
 ### Option 1: CPU Only
 
 ```
-pip install tensorflow==2.1.0 keras==2.1.0 keras-rl2==1.0.5
+pip install tensorflow==2.10 keras==2.10 keras-rl2
 ```
 
 
