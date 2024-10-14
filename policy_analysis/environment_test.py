@@ -3,7 +3,7 @@ import numpy as np
 cur_path = os.path.dirname(os.path.realpath(__file__))
 module_path = os.path.abspath(os.path.join(cur_path, '..'))
 
-# load simulator
+# load environment
 sys.path.insert(0, module_path)
 from tm_avoidance_model import Env
 from utils import simulate_tokamak_data
