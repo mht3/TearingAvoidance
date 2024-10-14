@@ -35,8 +35,6 @@ pip install -r requirements.txt
 
 ## Install TensorFlow
 
-Unfortunately, keras-rl2 is no longer updated and requires an older version of tensorflow (version 2.1.0). 
-
 ### Option 1: CPU Only
 
 ```
