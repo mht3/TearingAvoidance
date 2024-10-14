@@ -79,5 +79,5 @@ agent.compile(optimizer=Adam(lr=1e-4), metrics=['mae'])
 # Train and save model
 agent.fit(env, nb_steps=100000, visualize=False, verbose=0)
 #agent.save_weights('ddpg_weights.h5f', overwrite=True)
-agent.actor.save('actor.h5', save_format='h5')
+# agent.actor.save('actor.h5', save_format='h5')
 agent.test(env, nb_episodes=100, visualize=False)
